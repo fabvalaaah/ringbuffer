@@ -76,7 +76,8 @@ _RingBuffer* createRingBuffer(uint32_t size) {
 }
 
 /*
- * Free the memory allocated to a ring buffer (the pointer is then set to NULL).
+ * Frees the memory allocated to a ring buffer (the pointer is then set to
+ * NULL).
  */
 void destroyRingBuffer(_RingBuffer** buffer) {
     if (!buffer || !(*buffer)) {
