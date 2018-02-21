@@ -1,5 +1,5 @@
 # ringbuffer
-A ring / circular buffer written in ANSI C.
+C ring / circular buffer implementation.
 
 This is a C NetBeans project, compiled with GCC 5.4.0 and tested with Ubuntu
 Linux 16.04.5 LTS x64. No leak detected using Valgrind.
