@@ -89,7 +89,7 @@ void destroyRingBuffer(_RingBuffer** buffer) {
     }
 
     free(*buffer);
-    buffer = NULL;
+    *buffer = NULL;
 }
 
 /*
@@ -232,7 +232,7 @@ void nPeekFromRingBuffer(_RingBuffer* buffer, uint8_t* data, uint32_t n) {
 }
 
 /*
- * Removes n bytes from a ring buffer, n <= 0 < buffer->size.
+ * Removes n bytes from a ring buffer, 0 <= n < buffer->size.
  * The bytes are stored in a pre-allocated array "data".
  * Returns the number of bytes that have been removed.
  */
